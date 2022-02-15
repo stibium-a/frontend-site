@@ -1,0 +1,503 @@
+@media screen and (max-width:950px){
+    nav{
+        flex-direction: column;
+        height: 100px;
+        padding-bottom: 10px;
+    }
+    
+    .menu{
+        padding: 0;
+    }
+    
+    main{  
+    .contactWrapper{
+        padding: 30px 10px 40px 20px;
+    }
+    }
+    
+    .tipa_mudrost{
+        width: 80%;
+        .small{
+            margin-right: 10px;
+        }
+    }
+    .feedback{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width:870px){
+    main{  
+    .webWrapper{
+        .blockSearch{
+            margin: auto;
+            text-align: center;
+            padding: 0 0 300px 0;
+            .inputContainer{
+                .fa-search{
+                    left: 135px;
+                }
+                .searchBtn{
+                    left: 265px;
+                } 
+                .searchTriangleArrow{
+                    left: 295px;
+                }
+            }
+            .roundButtons{
+                margin: 15px auto;
+            }
+        }
+        .webElementsPanel{
+            .block1{
+                top: 350px;
+                left: 230px;
+            }
+            .block2{
+                top: 425px;
+                left: 280px;
+            }
+        }
+        
+        
+        }
+        
+    }
+}
+
+@media screen and (max-width:768px){
+    body.lock{
+        overflow: hidden;
+    }
+    nav{
+        flex-direction: column;
+        height: 100px;
+        padding-bottom: 10px;
+    }
+    
+    .menu{        
+        position: absolute;
+        top: -100%;
+        right: 70px;
+        background-color: blueviolet;
+        z-index: 3;
+        width: 265px;
+        text-align: center;
+        text-transform: uppercase;
+        ul{
+            flex-direction: column;
+        }
+        li{
+           display: block;
+            padding: 5px;
+            margin:0;
+            a{
+                padding: 15px 0;
+            }
+        }
+        li+li{
+                margin: 0;
+            }
+    }
+    .menu.active{
+       top: 45px; 
+        transition: all 0.5s ease;
+    }
+    
+    .burger{
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 25px;
+        width: 30px;
+        height: 20px;
+        z-index: 5;
+        cursor: pointer;
+        &:before{
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 0;
+            transition: all 0.5s;
+        }
+        &:after{
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 1.5px;
+            left: 0;
+            bottom: 0;
+            transition: all 0.5s;
+        }
+        span{
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 9px;
+            transition: all 0.5s;
+        }
+    }
+    .burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+        }
+    .burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+        }
+    .burger.active span{
+        transform: scale(0);
+    }
+    
+    .search{
+        margin: 10px 0 10px 0;
+    }
+    
+    main{   
+    .webWrapper{   
+        .blockSearch{  
+        .inputContainer{
+           margin: 0 0 5px 0; 
+        .fa-search{
+        top:17px;
+    }
+        .searchBtn{
+            top: 14px;
+        }
+        .searchTriangleArrow{
+            top: 10px;
+        }
+    }
+            .submitPanel{
+                margin: 15px 0 0 0;
+            }      
+    }
+    }
+    }
+    
+     .tipa_mudrost{
+        width: 75%;
+        .small{
+            margin-right: 10px;
+        }
+    }
+    .feedback{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    .submit{
+        margin: 0 0 10px 320px;
+    }
+    
+    @media screen and (max-width:580px){
+        main{
+            .searchPanel{
+                padding: 0;
+            }
+        .webWrapper{  
+        .webElementsPanel{
+            .block1{
+                left: 115px;
+            }
+            .block2{
+                left: 165px;
+            }
+        }
+    }
+    }
+    }
+    
+    @media screen and (max-width:500px){
+        
+        main{  
+            .webWrapper{
+            .submitPanel{
+                flex-direction: column;
+                .submitBtn{
+                    margin: 5px auto;
+                }
+            }
+            .webElementsPanel{
+                .block1{
+                    top: 450px;
+                    left: 55px;
+                }
+                .block2{
+                    top: 525px;
+                    left: 105px;
+                }
+            }
+        }
+        }
+        
+        .tipa_mudrost{
+        width: 70%;
+        .lor{
+            margin-bottom: 10px;
+        }
+        .small{
+            margin-right: 10px;
+        }
+    }
+        .feedback{
+        flex-direction: column;
+        padding: 0 0 10px 10px;
+    }
+        .userData{
+        flex-direction: column;
+        align-items: center;
+        input{
+            display: block;
+            margin: 0 auto 12px auto;
+        }
+    }
+        .contact{ 
+            .imho{
+            margin: 10px 0 0 0;
+            }
+            .submit{
+            margin: 0 auto 10px auto;
+        }
+        }
+    }
+    
+    @media screen and (max-width:450px){
+    main{
+        .webWrapper{
+            .blockSearch{
+                .inputContainer{
+                     .fa-search{
+                        left: 85px;
+                    }
+                    .searchBtn{
+                        left: 215px;
+                    }
+                   .searchTriangleArrow{
+                        left: 245px;
+                    }
+                }
+            }    
+            }
+        }  
+    }
+    
+      @media screen and (max-width:420px){
+    main{
+        .webWrapper{
+            .blockSearch{
+                padding: 0 0 25px 0;
+                .inputContainer{
+                     .fa-search{
+                        left: 104px;
+                    }
+                    .searchBtn{
+                        left: 232px;
+                    }
+                   .searchTriangleArrow{
+                        left: 264px;
+                    }
+                }
+            }    
+            }
+        .webElementsPanel{
+            display: none;
+        }
+        }  
+    }
+    
+    @media screen and (max-width:400px){
+    main{
+        .webWrapper{
+            .blockSearch{
+                padding: 0 0 25px 0;
+                .inputContainer{
+                     .fa-search{
+                        left: 80px;
+                    }
+                    .searchBtn{
+                        left: 208px;
+                    }
+                   .searchTriangleArrow{
+                        left: 238px;
+                    }
+                }
+            }    
+            }
+        }  
+    }
+    
+        @media screen and (max-width:380px){
+    main{
+         .searchPanel{
+            flex-direction: column;
+        }
+        .webWrapper{
+            padding: 15px 5px 0 5px;
+            .blockSearch{
+                padding: 0 0 25px 0;
+                .inputContainer{
+                    .fa-search{
+                        left: 92px;
+                    }
+                    .searchBtn{
+                        left: 224px;
+                    }
+                    .searchTriangleArrow{
+                        left: 252px;
+                    }
+                }
+            }
+        }
+    }
+            
+    @media screen and (max-width:365px){
+    main{
+         .searchPanel{
+            flex-direction: column;
+        }
+        .webWrapper{
+            padding: 15px 5px 0 5px;
+            .blockSearch{
+                padding: 0 0 25px 0;
+                .inputContainer{
+                    .fa-search{
+                        left: 92px;
+                    }
+                    .searchBtn{
+                        left: 214px;
+                    }
+                    .searchTriangleArrow{
+                        left: 243px;
+                    }
+                }
+            }
+        }
+    }
+            }
+           
+        .newsInputs{
+            flex-direction: column;
+            .mail{
+                margin: 0 0 10px 0;
+            }
+        }   
+        .network{
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (max-width:325px){
+    main{
+         .searchPanel{
+            flex-direction: column;
+        }
+        .webWrapper{
+            padding: 15px 5px 0 5px;
+            .blockSearch{
+                padding: 0 0 25px 0;
+                .inputContainer{
+                    .fa-search{
+                        left: 66px;
+                    }
+                    .searchBtn{
+                        left: 195px;
+                    }
+                    .searchTriangleArrow{
+                        left: 225px;
+                    }
+                }
+            }
+        }
+    }
+           
+        .newsInputs{
+            flex-direction: column;
+            .mail{
+                margin: 0 0 10px 0;
+            }
+        }   
+        .network{
+            justify-content: center;
+        }
+  
+    .tipa_mudrost{
+        width: 75%;
+        .small{
+            margin-right: 10px;
+        }
+    }
+    .feedback{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    .submit{
+        margin: 0 0 10px 320px;
+    }
+}
+}
+
+    @media screen and (max-width:285px){
+    main{
+         .searchPanel{
+            flex-direction: column;
+        }
+        .webWrapper{
+            padding: 15px 5px 0 5px;
+            .blockSearch{
+                padding: 0 0 25px 0;
+                .inputContainer{
+                    .fa-search{
+                        left: 47px;
+                    }
+                    .searchBtn{
+                        left: 176px;
+                    }
+                    .searchTriangleArrow{
+                        left: 204px;
+                    }
+                }
+            }
+        }
+        }
+         .wrap_footer{  
+        .versions{
+            padding: 5px 10px;
+            .ptichka{
+                    margin: 0;
+                }
+            .tipa_mudrost{
+                width: 75%;
+                margin: 0 0 0 10px;
+                .lor{
+                    padding: 0;
+                }
+                .small{
+                    margin-right: 10px;
+        }
+        }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

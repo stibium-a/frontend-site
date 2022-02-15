@@ -1,0 +1,386 @@
+@media screen and (max-width: 950px) {
+  nav {
+    flex-direction: column;
+    height: 100px;
+    padding-bottom: 10px;
+  }
+
+  .menu {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  nav {
+    flex-direction: column;
+    height: 100px;
+    padding-bottom: 10px;
+  }
+
+  .menu {
+    position: absolute;
+    top: -100%;
+    right: 70px;
+    background-color: blueviolet;
+    z-index: 3;
+    width: 265px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li {
+    display: block;
+    padding: 5px;
+    margin: 0;
+  }
+  .menu li a {
+    padding: 15px 0;
+  }
+  .menu li + li {
+    margin: 0;
+  }
+
+  .menu.active {
+    top: 45px;
+    transition: all 0.5s ease;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 25px;
+    width: 30px;
+    height: 20px;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .burger:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+  }
+  .burger:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s;
+  }
+  .burger span {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    transition: all 0.5s;
+  }
+
+  .burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .burger.active span {
+    transform: scale(0);
+  }
+
+  .searchPanel {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .search {
+    margin: 10px 0 10px 0;
+  }
+
+  .searchPanel .inputContainer .fa-search {
+    top: 15px;
+  }
+
+  .searchPanel p {
+    text-align: center;
+  }
+
+  .variations_passages {
+    padding: 0 0 55px 0;
+  }
+  .variations_passages h3 {
+    padding: 25px 0 0 0;
+  }
+  .variations_passages p {
+    padding-bottom: 10px;
+  }
+  .variations_passages .wrapper {
+    flex-direction: column;
+  }
+  .variations_passages .wrapper .ipadsPicture {
+    margin: auto;
+  }
+
+  .demoWrapper .demo .toggles .poloska {
+    width: 52%;
+    left: 173px;
+  }
+  .demoWrapper .demo .toggles .rounds {
+    left: 169px;
+  }
+  .demoWrapper .variations_passages_buy .wrapper {
+    flex-direction: column;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .buyIpadPicture {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .download {
+    margin: auto;
+  }
+
+  .tipa_mudrost {
+    width: 75%;
+  }
+  .tipa_mudrost .small {
+    margin-right: 10px;
+  }
+
+  .feedback {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .submit {
+    margin: 0 0 10px 320px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .demoWrapper .demo .toggles .poloska {
+    width: 280px;
+    left: 137px;
+  }
+  .demoWrapper .demo .toggles .rounds {
+    width: 350px;
+    left: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .searchPanel h2 {
+    text-align: center;
+  }
+
+  .main_wrapper .variations_passages .wrapper .ipadsPicture {
+    padding: 0 10px;
+  }
+  .main_wrapper .variations_passages .wrapper .ipadsPicture img {
+    width: 100%;
+  }
+
+  .demoWrapper .demo .toggles .poloska {
+    width: 60%;
+    left: 82px;
+  }
+  .demoWrapper .demo .toggles .rounds {
+    width: 250px;
+    left: 50px;
+  }
+  .demoWrapper .variations_passages_buy .wrapper {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .buyIpadPicture {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .buy {
+    padding: 0;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .buy ul {
+    padding: 0 10px 0 35px;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .links {
+    margin: 30px auto 0 auto;
+    justify-content: center;
+  }
+  .demoWrapper .demo .demoPlayer {
+    margin: 35px 10px 20px 10px;
+  }
+
+  .tipa_mudrost {
+    width: 70%;
+  }
+  .tipa_mudrost .lor {
+    margin-bottom: 10px;
+  }
+  .tipa_mudrost .small {
+    margin-right: 10px;
+  }
+
+  .feedback {
+    flex-direction: column;
+    padding: 0 0 10px 10px;
+  }
+
+  .userData {
+    flex-direction: column;
+    align-items: center;
+  }
+  .userData input {
+    display: block;
+    margin: 0 auto 12px auto;
+  }
+
+  .submit {
+    margin: 0 auto 10px auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .demoWrapper .demo .toggles .poloska {
+    width: 250px;
+    left: 80px;
+  }
+  .demoWrapper .demo .toggles .rounds {
+    width: 300px;
+    left: 50px;
+  }
+
+  .userData .imho .textarea {
+    margin: 10px 0 0 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .searchPanel h2 {
+    text-align: center;
+  }
+
+  .searchPanel .search {
+    margin-bottom: 10px;
+  }
+
+  .main_wrapper .variations_passages .download {
+    padding: 40px 15px 0 35px;
+  }
+  .main_wrapper .variations_passages .wrapper .ipadsPicture {
+    padding: 0 10px;
+    margin: 10px 20px;
+  }
+
+  .demoWrapper .demo .toggles .poloska {
+    width: 180px;
+    left: 90px;
+  }
+  .demoWrapper .demo .toggles .rounds {
+    width: 220px;
+    left: 65px;
+  }
+  .demoWrapper .variations_passages_buy .wrapper {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .buyIpadPicture {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .buy {
+    padding: 0;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .buy ul {
+    padding: 0 10px 0 35px;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .links {
+    margin: 10px 0 0 0;
+  }
+  .demoWrapper .variations_passages_buy .wrapper .links .more, .demoWrapper .variations_passages_buy .wrapper .links .down {
+    margin: 0 auto 10px auto;
+  }
+  .demoWrapper .demo .demoPlayer {
+    flex-direction: column;
+    margin: 20px 10px 20px 10px;
+  }
+  .demoWrapper .demo .demoPlayer .playerItem {
+    margin: 0 auto 35px auto;
+  }
+
+  .links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .links .more {
+    margin-bottom: 10px;
+  }
+
+  .tipa_mudrost {
+    width: 170px;
+  }
+
+  .newsInputs {
+    flex-direction: column;
+  }
+
+  .mail {
+    margin-bottom: 10px;
+  }
+
+  .network {
+    justify-content: center;
+  }
+
+  .contact h3 {
+    text-align: center;
+  }
+
+  .userData {
+    flex-direction: column;
+    align-items: center;
+  }
+  .userData input {
+    display: block;
+    margin: 0 auto 12px auto;
+  }
+  .userData .imho .textarea {
+    margin: 10px 0 0 0;
+  }
+
+  .submit {
+    margin: 0 auto 10px auto;
+  }
+}
+@media screen and (max-width: 325px) {
+  .demoWrapper .demo .toggles .poloska {
+    width: 180px;
+    left: 75px;
+  }
+  .demoWrapper .demo .toggles .rounds {
+    width: 220px;
+    left: 50px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .demoWrapper .demo .toggles .poloska {
+    width: 180px;
+    left: 55px;
+  }
+  .demoWrapper .demo .toggles .rounds {
+    width: 220px;
+    left: 35px;
+  }
+}

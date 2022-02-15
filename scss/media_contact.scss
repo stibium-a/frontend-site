@@ -1,0 +1,371 @@
+@media screen and (max-width:950px){
+    nav{
+        flex-direction: column;
+        height: 100px;
+        padding-bottom: 10px;
+    }
+    
+    .menu{
+        padding: 0;
+    }
+    
+    main{  
+    .contactWrapper{
+        padding: 30px 10px 40px 20px;
+    }
+    }
+    
+    .tipa_mudrost{
+        width: 80%;
+        .small{
+            margin-right: 10px;
+        }
+    }
+    .feedback{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width:870px){
+    main{  
+    .contactWrapper{
+        flex-direction: column;
+        padding: 30px 10px 40px 20px;
+        .userInput{
+            max-width: 345px;
+            margin: auto;
+            padding: 15px 0 0 0;
+            
+            .submitBtn{
+                justify-content: center;
+            }
+        }
+        .addressAndMap{
+            max-width: 385px;
+            margin: auto;
+            .map{
+                margin: 225px 0 75px 0;
+            }
+            img{
+                left: 5px;
+            }
+            .address{
+                left: 15px;
+            } 
+        }
+    }
+        
+    }
+}
+
+@media screen and (max-width:768px){
+    body.lock{
+        overflow: hidden;
+    }
+    nav{
+        flex-direction: column;
+        height: 100px;
+        padding-bottom: 10px;
+    }
+    
+    .menu{        
+        position: absolute;
+        top: -100%;
+        right: 70px;
+        background-color: blueviolet;
+        z-index: 3;
+        width: 265px;
+        text-align: center;
+        text-transform: uppercase;
+        ul{
+            flex-direction: column;
+        }
+        li{
+           display: block;
+            padding: 5px;
+            margin:0;
+            a{
+                padding: 15px 0;
+            }
+        }
+        li+li{
+                margin: 0;
+            }
+    }
+    .menu.active{
+       top: 45px; 
+        transition: all 0.5s ease;
+    }
+    
+    .burger{
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 25px;
+        width: 30px;
+        height: 20px;
+        z-index: 5;
+        cursor: pointer;
+        &:before{
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 0;
+            transition: all 0.5s;
+        }
+        &:after{
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 1.5px;
+            left: 0;
+            bottom: 0;
+            transition: all 0.5s;
+        }
+        span{
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 9px;
+            transition: all 0.5s;
+        }
+    }
+    .burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+        }
+    .burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+        }
+    .burger.active span{
+        transform: scale(0);
+    }
+    
+    .searchPanel{
+        flex-direction: column;
+        justify-content: center;
+            .searchHeader{
+                text-align: center;
+            }
+    }
+    
+    .search{
+        margin: 10px 0 10px 0;
+    }
+    
+     .searchPanel .inputContainer .fa-search{
+        top:15px;
+    }
+    
+    .searchPanel p{
+        text-align: center;
+    }
+    
+     .tipa_mudrost{
+        width: 75%;
+        .small{
+            margin-right: 10px;
+        }
+    }
+    .feedback{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    .submit{
+        margin: 0 0 10px 320px;
+    }
+    
+    
+    
+    @media screen and (max-width:500px){
+        .tipa_mudrost{
+        width: 70%;
+        .lor{
+            margin-bottom: 10px;
+        }
+        .small{
+            margin-right: 10px;
+        }
+    }
+        .feedback{
+        flex-direction: column;
+        padding: 0 0 10px 10px;
+    }
+        .userData{
+        flex-direction: column;
+        align-items: center;
+        input{
+            display: block;
+            margin: 0 auto 12px auto;
+        }
+    }
+        .contact{ 
+            .imho{
+            margin: 10px 0 0 0;
+            }
+            .submit{
+            margin: 0 auto 10px auto;
+        }
+        }
+    }
+    
+    @media screen and (max-width:450px){
+        .searchPanel{
+            .searchHeader{
+                text-align: center;
+            }
+        }
+        .newsInputs{
+            flex-direction: column;
+            .subscribe{
+                margin: 10px 0 0 0;
+            }
+        }
+        .network{
+            justify-content: center;
+        }
+        .contactWrapper{ 
+            .userInput{
+                .inputItem{ 
+                    .usrContData{
+                        width: 325px;
+                    }
+    }
+                #message{
+                        width: 325px;
+                    }
+        }
+            .addressAndMap{
+            img{
+                display: none;
+            }
+        }
+        }
+        
+    }
+    
+    @media screen and (max-width:350px){
+        main{  
+     .contactWrapper{ 
+            .userInput{
+                .inputItem{ 
+                    .usrContData{
+                        width: 280px;
+                    }
+    }
+                #message{
+                        width: 280px;
+                    }
+        }
+         
+         .addressAndMap{
+             .map{
+                 margin: 225px 0 0 0;
+                 iframe{
+                     width: 285px;
+                 } 
+             }
+         }
+            
+        }
+        }
+    }
+    
+    @media screen and (max-width:320px){
+     
+     .contactWrapper{ 
+            .userInput{
+                .inputItem{ 
+                    .usrContData{
+                        width: 280px;
+                    }
+    }
+                #message{
+                        width: 280px;
+                    }
+        }
+            
+        }
+        
+    .tipa_mudrost{
+        width: 75%;
+        .small{
+            margin-right: 10px;
+        }
+    }
+    .feedback{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    .submit{
+        margin: 0 0 10px 320px;
+    }
+}
+}
+
+ @media screen and (max-width:300px){
+        main{  
+     .contactWrapper{ 
+         padding: 30px 10px;
+            .userInput{
+                .inputItem{ 
+                    .usrContData{
+                        width: 260px;
+                    }
+    }
+                #message{
+                        width: 260px;
+                    }
+        }
+         
+         .addressAndMap{
+             .map{
+                 margin: 250px 0 0 0;
+                 iframe{
+                     width: 260px;
+                 } 
+             }
+         }
+            
+        }
+        }
+      .wrap_footer{  
+        .versions{
+            padding: 5px 10px;
+            .ptichka{
+                    margin: 0;
+                }
+            .tipa_mudrost{
+                width: 75%;
+                margin: 0 0 0 10px;
+                .lor{
+                    padding: 0;
+                }
+                .small{
+                    margin-right: 10px;
+        }
+        }
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
